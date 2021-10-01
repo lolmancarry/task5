@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+}
+
+//font-sizes
+$main-h:32px;
+$menu-titles:13px;
+$chapter:22px;
+$standart:14px;
+//colors
+$chapter-description:#f9f9f9;
+$link-color:white;
+$color1:#00e0d0;
+$textColor: #413d4b;
+$list-text:#333333;
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-wrapper{
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+%buttons {
+    font-family: 'Hammersmith One';
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $color1;
+    border: 1px solid $color1;
+    border-radius: 4px;
+    padding: 15px 15px 11px 15px;
+    background: none;
+    &:hover{
+        color:$color1;
+        opacity: 0.7;
+        cursor:pointer;
+    }
+}
+.mini-border{
+    width: 50px;
+    border-bottom: 1px solid $color1;
+}
+.chapter{
+    font-family: 'Playfair Display';
+    font-size: $chapter;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: $textColor;
+    text-transform: uppercase;
+}
+.chapter-description{
+    opacity: 0.74;
+    font-family: 'Playfair Display';
+    letter-spacing: 0.075em;
+    color: #2f2d35;
+    margin-top: -15px;
+    padding: 25px 0px 20px 0px;
+}
+
+
+
+//header
+@import "_header";
+//our-story section
+@import "_our-story";
+//watch-our-story
+@import "_watch-story";
+//expertise-section
+@import "_expertise";
+//our-team-section
+@import "_our-team";
+// work-gallery
+@import "_our-works";
+//team slider 
+@import "_team-slider";
+//form and partners
+@import "_form-partners";
+//footer
+@import "_footer";

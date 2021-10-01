@@ -1,0 +1,68 @@
+.our-team{
+    background-image: url(/img/our_team_background.png);
+}
+.gradient2{
+    background: linear-gradient(to right, rgba(#0e0a33, 0.85));
+}
+.white-chapter{
+    @extend .chapter;
+    color:$link-color;
+}
+.white-chapter-description{
+    @extend .chapter-description;
+    color:$chapter-description;
+}
+.mini-border3{
+    @extend .mini-border2;
+        border:1px $link-color solid; 
+        opacity: 0.2;
+}
+.team-list{
+    margin-top: -40px;
+}
+.team-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+    width: 220px;
+    border-bottom: 1px solid #6e6c82;
+    .member-photo{
+        width: 220px;
+        height: 229px;
+        background-color:$link-color;
+    }
+        .member-name{
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            color: $link-color;
+            font-size: $standart;
+            margin-top: 20px;
+        }
+            .member-position{
+                text-transform: uppercase;
+                opacity: 0.61;
+                font-size: $menu-titles;
+                font-weight: 300;
+                color: #fafafa;
+                margin-top:12px;
+            }
+
+}
+.hiring-block{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  padding-bottom: 51px;
+    .invite-text{
+        font-size: $standart;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        color: $link-color;
+        margin: 50px 0px 30px 0px;
+    }
+}
+.team-button{
+    @extend %buttons;
+}

@@ -1,0 +1,64 @@
+ .header{
+        background-image: url(/img/header_image.png);
+        height: 100vh;
+        background-repeat:repeat-x;
+        background-size:cover;
+        }
+.gradient{
+            background: linear-gradient(rgba(#0e0a33, 0.85));
+            height: 100vh;
+       }  
+.logotype{
+    width: 135px;
+}
+.header-logo-menu{
+    padding-top: 15px;
+}
+.logo-name{
+    margin-left:10px;
+    font-size:$main-h;
+    font-weight: 100;
+    color: transparent;
+    background: linear-gradient(90.0deg, #00e0d0 0%, #4aa3cc 100%);
+    background-clip: text;
+} 
+.header-menu{
+    display: flex;
+    .selected{
+        color: $color1;
+    }
+     a{
+        margin-left: 20px;
+        font-size: $menu-titles;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        color: $link-color;
+            &:hover{
+                color: $color1;
+            }
+
+     }
+}
+.welcome-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-family: 'Playfair Display';
+        font-size: $main-h;
+        font-weight: 900;
+        letter-spacing: 0.01em;
+        padding:170px 0px 20px 0px;
+    }
+    p{
+        text-align: center;
+        line-height: 24px;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        padding: 30px 0px 50px 0px;  
+    }
+    
+}
+.header-btn{
+    @extend %buttons;
+}

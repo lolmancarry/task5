@@ -1,0 +1,24 @@
+.team-slider{
+    background-image: url(/img/team_slider.png);
+    height: 100vh;
+    background-repeat:repeat-x;
+    background-size:cover;
+}
+.team-slider-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+            .slider-text{
+            opacity: 0.85;
+            font-family: 'Playfair Display';
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.025em;
+            color: $link-color;
+            width: 775px;
+            text-align: center;
+            padding-top: 40px;
+        }
+}
+
+
