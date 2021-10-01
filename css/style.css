@@ -680,19 +680,34 @@ form .form-btn {
 }
 
 .footer-links {
-  width: 260px;
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .footer-links .link-border {
-  margin-left: 6px;
+  margin-right: 6px;
   border: 1px solid #fff;
   border-radius: 50%;
-  padding: 10px 12px 10px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
 }
-.footer-links .link-borderf {
-  border: 1px solid #fff;
-  border-radius: 50%;
-  padding: 11px 16px 9px 15px;
+.footer-links .link-border a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer-bottom {
